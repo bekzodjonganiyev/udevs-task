@@ -1,9 +1,11 @@
+import MainMenuSvg1 from "./assets/icons/apelsin.svg?react"
 
 function App() {
 
   return (
     <div className='text-red-500'>
-      Lorem.
+      Lorem. <MainMenuSvg1 />
+      
     </div>
   )
 }

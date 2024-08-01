@@ -1,12 +1,19 @@
-import MainMenuSvg1 from "./assets/icons/apelsin.svg?react"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+
+import { MainLayout } from "@/layout/main-layout"
+import { Orders } from "./modules/orders/orders"
 
 function App() {
 
   return (
-    <div className='text-red-500'>
-      Lorem. <MainMenuSvg1 />
-      
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Navigate to="/orders" replace/>} />
+          <Route path="orders" element={<Orders />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

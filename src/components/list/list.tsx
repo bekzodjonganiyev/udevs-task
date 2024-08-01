@@ -19,7 +19,7 @@ const ListHeader = ({ children, className }: { children: ReactNode, className?: 
 
 const ListBody = ({ children, className }: { children: ReactNode, className?: string }) => {
     return (
-        <div className={cn("bg-[#EEF0F2]", className)}>
+        <div className={cn("bg-[#EEF0F2] space-y-6", className)}>
             {children}
         </div>
     )

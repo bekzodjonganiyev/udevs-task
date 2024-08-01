@@ -1,24 +1,25 @@
+import { cn } from '@/utils/cn'
 import { ReactNode } from 'react'
 
-const List = ({ children }: { children: ReactNode }) => {
+const List = ({ children, className }: { children: ReactNode, className?: string }) => {
     return (
-        <div>
+        <div className={cn(className)}>
             {children}
         </div>
     )
 }
 
-const ListHeader = ({ children }: { children: ReactNode }) => {
+const ListHeader = ({ children, className }: { children: ReactNode, className?: string }) => {
     return (
-        <div>
+        <div className={cn(className)}>
             {children}
         </div>
     )
 }
 
-const ListBody = ({ children }: { children: ReactNode }) => {
+const ListBody = ({ children, className }: { children: ReactNode, className?: string }) => {
     return (
-        <div>
+        <div className={cn("bg-[#EEF0F2]", className)}>
             {children}
         </div>
     )

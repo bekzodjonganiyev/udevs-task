@@ -7,7 +7,7 @@ export const MainLayout = () => {
         <div className="flex items-start h-screen  border-red-500">
             <Sidebar />
             
-            <div>
+            <div className="flex-1">
                 <Outlet />
             </div>
         </div>
